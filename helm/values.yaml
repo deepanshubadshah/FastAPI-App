@@ -1,0 +1,2 @@
+# appVersion: "0.1.0"  # Override from Chart.yaml if needed
+# replicaCount: 1

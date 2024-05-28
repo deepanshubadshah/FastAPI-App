@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastapi
+spec:
+  replicas: 1  # Number of replicas (can be overridden in values.yaml)
+  selector:
+    matchLabels:
+      app: fastapi
+  template:
+    metadata:
+      labels:
+        app: fastapi
+    spec:
+      containers:
+      - name: fastapi
+        image: your-username/fastapp-fastapi:{{ .Values.appVersion }}  # Use your image name
+        ports:
+        - containerPort: 8000
+          # Additional ports can be defined here
+        volumeMounts:
+        - name: app-config
+      volumes:
+      - name: app-config  # the volume for configuration (optional)
+        configMap:
+          name: fastapi-config

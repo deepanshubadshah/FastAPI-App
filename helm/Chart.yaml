@@ -1,0 +1,8 @@
+apiVersion: v1
+name: fastapp
+version: 1.0.0
+appVersion: "0.1.0"
+description: A simple Helm chart for deploying a FastAPI application
+maintainers:
+  - name: Deepanshu Badshah
+    email: deepanshu.badshah@asato.ai
