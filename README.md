@@ -1,6 +1,6 @@
 # FastAPI App
  
-This is simple CRUD App 
+This is a simple CRUD App 
 
 You can RUN the application using docker-compose file with command ```docker-compose up -d```
 
